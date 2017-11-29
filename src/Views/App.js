@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import fire from './fire';
+import fire from '../fire';
+
+import './App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +30,8 @@ class App extends Component {
     return (
       <form onSubmit={this.addMessage.bind(this)}>
         <input type="text" ref={ el => this.inputEl = el }/>
-        <input type="submit"/>
+        <button type="submit"> CLICK HERE! </button>
+        <span>Please, show me this string...</span>
         <ul>
           { /* Render the list of messages */
             this.state.messages.map( message => <li key={message.id}>{message.text}</li> )
