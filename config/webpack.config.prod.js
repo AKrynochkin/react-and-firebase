@@ -14,7 +14,7 @@ module.exports = {
         './src/index'
     ],
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, '../build'),
         publicPath: '/',
         filename: jsFilename
     },
@@ -24,7 +24,7 @@ module.exports = {
                 test: /.jsx?$/,
                 include: path.resolve(__dirname, 'src'),
                 exclude: /node_modules/,
-                loader: 'babel-loader',
+                loader: require.resolve('babel-loader')
             },
             {
                 test: /(\.css|\.scss)$/,

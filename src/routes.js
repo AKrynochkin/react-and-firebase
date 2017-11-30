@@ -1,14 +1,10 @@
 import React from 'react';
-import {
-  Router,
-  Route,
-  browserHistory
-} from 'react-router';
+import { Switch, Route } from 'react-router-dom'; 
 
-import App from './views/App';
+import Home from './views/Home';
 
 export default () => (
-  <Router history={browserHistory}>
-    <Route path='/app' component={App} />
-  </Router>
+  <main>
+    <Route path='/' component={Home} />
+  </main>
 );

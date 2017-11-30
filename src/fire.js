@@ -1,13 +1,13 @@
 import firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyBpbweMP5MtTGOjoTInqlsyeno0O0FbwUY",
-    authDomain: "first-react-app-a21.firebaseapp.com",
-    databaseURL: "https://first-react-app-a21.firebaseio.com",
-    projectId: "first-react-app-a21",
-    storageBucket: "first-react-app-a21.appspot.com",
-    messagingSenderId: "697448471027"
-};
+    apiKey: "AIzaSyDDUVvDNzSm4437Ih1FHDhqyMEQvJvMGrg",
+    authDomain: "react-sketch-1.firebaseapp.com",
+    databaseURL: "https://react-sketch-1.firebaseio.com",
+    projectId: "react-sketch-1",
+    storageBucket: "react-sketch-1.appspot.com",
+    messagingSenderId: "595978703489"
+  };
 
 const fire = firebase.initializeApp(config);
 

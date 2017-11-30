@@ -1,30 +1,37 @@
 const Config = require('webpack-config');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const cssFilename = 'static/css/[name].[contenthash:8].css';
-const jsFilename = 'static/js/main.[hash].min.js';
+const jsFilename = 'static/js/main.[hash].js';
 
 module.exports = {
     entry: [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:3000',
+        'webpack/hot/only-dev-server',
         './src/index'
     ],
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, '../build'),
         publicPath: '/',
         filename: jsFilename
+    },
+    resolve: {
+        extensions: ['.json', '.js', '.jsx', '.scss']
     },
     module: {
         rules: [
             {
                 test: /.jsx?$/,
-                include: path.resolve(__dirname, 'src'),
-                exclude: /node_modules/,
                 loader: 'babel-loader',
+                include: [
+                    path.resolve(__dirname, 'src')
+                ],
+                exclude: /node_modules/
             },
             {
                 test: /(\.css|\.scss)$/,
@@ -34,16 +41,14 @@ module.exports = {
                             fallback: {
                                 loader: require.resolve('style-loader'),
                                 options: {
-                                    hmr: false
+                                    sourceMap: true
                                 },
                             },
                             use: [
                                 {
                                     loader: require.resolve('css-loader'),
                                     options: {
-                                        url: false,
                                         importLoaders: 1,
-                                        minimize: true,
                                         sourceMap: true
                                     },
                                 },
@@ -57,8 +62,8 @@ module.exports = {
                                         plugins: () => [
                                             require('postcss-flexbugs-fixes'),
                                             autoprefixer({
-                                                browsers: ['last 2 versions', 'ie >= 10'],
-                                                flexbox: 'no-2009',
+                                                browsers: ['last 2 versions', 'ie >= 11'],
+                                                flexbox: 'no-2009'
                                             }),
                                         ],
                                     },
@@ -77,17 +82,8 @@ module.exports = {
             }
         ]
     },
-    resolve: {
-        extensions: ['.js', '.jsx', '.scss']
-    },
     devtool: 'source-map',
     plugins: [
-        new CleanWebpackPlugin(['build']),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: true
-            }
-        }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
             inject: "body"
@@ -96,5 +92,6 @@ module.exports = {
             filename: cssFilename,
             allChunks: true
         }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };
