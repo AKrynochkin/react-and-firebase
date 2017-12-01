@@ -13,9 +13,7 @@
     "start": "node server.js",
     "build": "webpack",
     "deploy": "firebase deploy",
-    "bd": "npm run build && npm run deploy",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "bd": "npm run build && npm run deploy"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",

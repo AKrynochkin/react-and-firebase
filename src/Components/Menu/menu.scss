@@ -1,17 +1,40 @@
-.menu {
+@import '../../styles/variables';
+
+.container-header {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    width: 40px;
+    height: $menu-size;
+    width: 100%;
     background-color: tomato;
-    & .toggle-btn {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        font-size: 26px;
-        font-weight: 500;
-        color: white;
-        cursor: pointer;
-    }
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    background-color: tomato;
+    width: $menu-size;
+    height: $menu-size;
+    text-align: center;
+    user-select: none;
+}
+
+.menu {
+    padding-top: $menu-size;
+    position: fixed;
+    top: $menu-size;
+    left: -$menu-size;
+    bottom: 0;
+    width: $menu-size;
+    background-color: tomato;
+    transition: left 0.5s;
+
+    #menuToggleCheckbox:checked + & {
+        left: 0;
+    } 
 }

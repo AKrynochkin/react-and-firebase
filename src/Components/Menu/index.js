@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import './menu.scss';
 
-const Menu = () => (
-  <nav className='menu'>
-    <label className='toggle-btn'>☰</label>
-  </nav>
-);
+const Menu = () => [
+  <header className='container-header'>
+    <label className='toggle-btn' for='menuToggleCheckbox'>☰</label>
+  </header>,
+  <input id='menuToggleCheckbox' type='checkbox' hidden />,
+  <nav className='menu' />
+];
 
 export default Menu;
