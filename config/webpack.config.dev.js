@@ -93,7 +93,7 @@ module.exports = {
                         name: '[name].[ext]',
                         outputPath: 'Assets/images/',
                         useRelativePath: true
-                    }  
+                    }
                   }
                 ]
             }
@@ -110,5 +110,8 @@ module.exports = {
             allChunks: true
         }),
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    devServer: {
+        open: true
+    }
 };
