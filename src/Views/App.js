@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Menu from '../Components/Menu';
-import AppRoutes from '../routes';
+import AppRoutes from ':/routes';
+import Menu from 'Components/Menu';
 
 const App = () => (
   <div className="app-container">

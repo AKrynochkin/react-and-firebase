@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import fire from '../../fire';
+import fire from ':/fireScript';
 
 export default class Home extends Component {
     constructor(props) {

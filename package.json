@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "webpack",
+    "build": "webpack --config config/webpack.config.prod",
     "deploy": "firebase deploy",
     "bd": "npm run build && npm run deploy"
   },
