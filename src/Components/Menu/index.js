@@ -3,11 +3,11 @@ import React, { Fragment } from 'react';
 import './menu.scss';
 
 const Menu = () => [
-  <header className='container-header'>
-    <label className='toggle-btn' for='menuToggleCheckbox'>☰</label>
+  <header key='contHeader' className='container-header'>
+    <label className='toggle-btn' htmlFor='menuToggleCheckbox'>☰</label>
   </header>,
-  <input id='menuToggleCheckbox' type='checkbox' hidden />,
-  <nav className='menu' />
+  <input key='headerMenuToggleInput' id='menuToggleCheckbox' type='checkbox' hidden />,
+  <nav key='headerNavMenu' className='menu' />
 ];
 
 export default Menu;

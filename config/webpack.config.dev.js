@@ -17,7 +17,7 @@ module.exports = {
     ],
     output: {
         path: path.build,
-        publicPath: '/static/',
+        publicPath: '/',
         filename: jsFilename
     },
     resolve: {
@@ -82,6 +82,18 @@ module.exports = {
                         }
                     )
                 )
+            },
+            {
+                test: /\.(svg|png|jpg)$/,
+                include: [path.src],
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]'
+                    }  
+                  }
+                ]
             }
         ]
     },

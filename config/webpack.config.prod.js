@@ -74,6 +74,20 @@ module.exports = {
                         }
                     )
                 )
+            },
+            {
+                test: /\.(svg|png|jpg)$/,
+                include: [path.src],
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name: "[name].[ext]",
+                        outputPath: path.build,
+                        useRelativePath: true
+                    }  
+                  }
+                ]
             }
         ]
     },
