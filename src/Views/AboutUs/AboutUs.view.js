@@ -9,8 +9,8 @@ export default class AboutUs extends Component {
 
     render() {
         return (
-            <div className='container'>
-                <div className='sub-header'>
+            <div className='about-us-container'>
+                <div className='sub-header transparent'>
                     <h1 className='sub-header__text'>Создай свой чехол сам</h1>
                 </div>
                 <div className='main-section'>

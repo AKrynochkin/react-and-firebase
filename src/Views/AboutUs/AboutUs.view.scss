@@ -1,79 +1,82 @@
-.sub-header {
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../../Assets/images/bg-sub-header.jpg);
-}
+.about-us-container {
+    .sub-header {
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.2);
+    }
 
-.sub-header__text {
-    text-transform: uppercase;
-    color: white;
-    font-size: 40px;
-    line-height: 46px;
-}
+    .sub-header__text {
+        text-transform: uppercase;
+        color: white;
+        font-size: 40px;
+        line-height: 46px;
+    }
 
-.main-section {
-    margin: 40px 15% 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+    .main-section {
+        padding: 40px 15% 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
 
-.main-section__item {
-    flex: 0 1 auto;
-    margin-bottom: 40px;
-    width: 100%;
-}
+    .main-section__item {
+        flex: 0 1 auto;
+        margin-bottom: 40px;
+        width: 100%;
+    }
 
-.info-block {
-    display: flex;
-}
+    .info-block {
+        display: flex;
+    }
 
-.info-block__left, 
-.info-block__right {
-    flex-shrink: 0;
-    flex-grow: 1;
-}
+    .info-block__left, 
+    .info-block__right {
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
 
-.info-block__left {    
-    margin-right: 20px;
-    flex-grow: 0;
-}
+    .info-block__left {    
+        margin-right: 20px;
+        flex-grow: 0;
+    }
 
-.info-block__right {
-    flex-basis: calc(100% - 180px);
-}
+    .info-block__right {
+        flex-basis: calc(100% - 180px);
+    }
 
 
-.info-block__img {
-    width: 160px;
-}
+    .info-block__img {
+        width: 160px;
+    }
 
-.info-block__text {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 10px;
-}
+    .info-block__text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
 
-.info-block__title {
-    font-size: 30px;
-    line-height: 36px;
-    color: #3a3260;
-    margin-bottom: 15px;
-}
+    .info-block__title {
+        font-size: 30px;
+        line-height: 36px;
+        color: #3a3260;
+        margin-bottom: 15px;
+    }
 
-.store-info__title {
-    color: #3a3260;
-    margin-bottom: 10px
-}
+    .store-info__title {
+        color: #3a3260;
+        margin-bottom: 10px
+    }
 
-.store-info__field {
-    margin-right: 10px;
-    font-weight: bold;
-    color: #5e4cb8;
-}
+    .store-info__field {
+        margin-right: 10px;
+        font-weight: bold;
+        color: #5e4cb8;
+    }
 
-.store-info__value {
+    .store-info__value {
 
+    }
 }
