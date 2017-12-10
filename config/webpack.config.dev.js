@@ -90,8 +90,10 @@ module.exports = {
                   {
                     loader: 'file-loader',
                     options: {
-                        name: '[name].[ext]'
-                    }  
+                        name: '[name].[ext]',
+                        outputPath: 'Assets/images/',
+                        useRelativePath: true
+                    }
                   }
                 ]
             }
@@ -108,5 +110,8 @@ module.exports = {
             allChunks: true
         }),
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    devServer: {
+        open: true
+    }
 };

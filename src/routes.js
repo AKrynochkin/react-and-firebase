@@ -5,6 +5,6 @@ import Home from './views/Home';
 
 export default () => (
   <main>
-    <Route path='/' component={Home} />
+    <Route path='/' component={Home} exact/>
   </main>
 );
