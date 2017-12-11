@@ -70,6 +70,40 @@ export default class Home extends Component {
                         <Catalog items={items} />
                     </section>
                 </section>
+                <section className='content__block transparent first'>
+                    <section className='block__content middle'>
+                        Удобный и многофункциональный конструктор для создания неповторимого чехла.
+                        <button className='btn btn-green'>Перейти к конструктору</button>
+                    </section>
+                </section>
+                <section className='content__block  model'>
+                    <div className='block__text'>
+                        <h1>Цветные, яркие, твои!</h1>
+                        <p>✓ Создай свой дизайн!</p>
+                        <p>✓ Будь оригинальным!</p>
+                        <p>✓ Сделай подарок от души!</p>
+                    </div>
+                    <div className='block__img'>
+                        <img src={require('../../Assets/images/girl-cover.jpg')}/>
+                    </div>
+                </section>
+                <section className='content__block transparent first'>
+                    <section className='block__content middle'>
+                        В каталоге можно найти множество дизайнов на любой вкус.
+                        <button className='btn btn-lavanda'>Перейти в каталог</button>
+                    </section>
+                </section>
+                <section className='content__block  final'>
+                    <div className='block__img'>
+                        <img src={require('../../Assets/images/covers.jpg')}/>
+                    </div>
+                    <div className='block__text'>
+                        <h1>Почему именно CoverUp?</h1>
+                        <p>✓ Дизайнерский чехол просто необходим, чтобы создать запоминающийся образ (даже соблюдая дресс-код). В нашем интернет-магазине чехлов вы сможете найти как смелые и неожиданные решения, так и создать что-то свое, но не менее интересное. Такой чехол подойдет и для любителей побаловать себя, и в качестве подарка.</p>
+                        <p>✓ Модный чехол – это отличный подарок для мужчины и женщины. Прикольные надписи и оригинальные принты сделают его и по-настоящему особенным и запоминающимся.</p>
+                        <p>✓ Оригинальный чехол даст понять, что у вас все в порядке и с чувством стиля и с чувством юмора! А для людей креативных, творчески мыслящих – это абсолютный must have! </p>
+                    </div>
+                </section>
             </main>
         );
     }

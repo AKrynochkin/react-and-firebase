@@ -3,12 +3,17 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    height: 200px;
     align-items: center;
     color: #fff;
     font-weight: 700;
     background: #212127;
     padding: 0 30px;
+}
+
+.footer__main {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .footer__logo {

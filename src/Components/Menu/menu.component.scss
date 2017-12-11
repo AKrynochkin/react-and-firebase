@@ -44,7 +44,7 @@
     justify-content: space-between;
     height: $menu-size;
     align-items: center;
-    background: #6f276f;
+    background: #5e4cb8;
     color: #fff;
     font-weight: 700;
 
@@ -82,11 +82,11 @@
             }
 
             &:hover {
-                color: #986ddd
+                color: #cbaaff;
             }
 
             &.current-link {
-                color: #986ddd;
+                color: #cbaaff;
             }
         }
     }
