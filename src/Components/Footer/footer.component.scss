@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    background: #212127;
+    padding: 0 30px;
+}
+
+.footer__logo {
+    font-size: 36px;
+    line-height: 42px;
+    color: #5e4cb8;
+}
+
+.footer__copyright {
+    color: #5e4cb8;
+}
+
+.footer__social {
+   a{
+       margin: 15px;
+   }
+}
