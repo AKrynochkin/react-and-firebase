@@ -29,10 +29,12 @@ export default class Constructor extends Component {
                     <h1 className='sub-header__text'>Конструктор</h1>
                 </div>
                 <section className='main-section'>
-                    <section>
+                    <section className='constructor'>
                         <img id="template" className={this.state.isChanged ? "hidden" : ""} src={require('../../Assets/images/empty.jpg')} alt="Template"/> 
                         <img id="template_res" className={!this.state.isChanged ? "hidden" : ""} src={require('../../Assets/images/full.jpg')} alt="Template"/> 
-                        <input type="file" onChange={() => this.toggle()} /> 
+                        <label htmlFor="file" className='btn btn-green' >Загрузить картинку</label>
+                        <input id="file" type="file" className="hidden" onChange={() => this.toggle()} /> 
+                        <NavLink to='/cart' className={'btn btn-lavanda ' + (!this.state.isChanged ? "hidden" : '')} >Купить</NavLink>
                     </section>
                 </section>
             </main>

@@ -1,0 +1,29 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    .sub-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        flex: 0 0 140px;
+    }
+
+    .sub-header__text {
+        text-transform: uppercase;
+        color: white;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .main-section {
+        padding: 40px 15% 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        flex: 1 0 auto;
+    }
+
+}

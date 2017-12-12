@@ -1,4 +1,4 @@
-.constructor-container {
+.pdp-container {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
@@ -18,19 +18,12 @@
     }
 
     .main-section {
-        padding: 40px 15% 0;
+        padding: 40px 15% 20px;
         display: flex;
         align-items: center;
         flex-direction: column;
         background: #fff;
         flex: 1 0 auto;
-    }
-
-    .constructor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
     }
 
     .btn {
@@ -47,14 +40,6 @@
         font-weight: normal;
         width: 320px;
         text-align: center;
-        cursor: pointer;
-
-        &.btn-green {
-            background-color: #279e66;
-            &:hover {
-                background-color: #91e0ba;
-            }
-        }
 
         &.btn-lavanda {
             background-color: #5e4cb8;
@@ -64,11 +49,16 @@
         }
     }
 
-    .hidden {
-        display: none;
+    .info-block__title, .info-block__text, .info-block__left {
+        text-align: center;
     }
 
-    .visible {
-        display: block;
+    .info-block__title {
+        margin-bottom: 10px;
+    }
+
+    .info-block__price {
+        color: #5e4cb8;
+        font-weight: bold;
     }
 }

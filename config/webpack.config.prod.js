@@ -82,9 +82,9 @@ module.exports = {
                   {
                     loader: 'file-loader',
                     options: {
-                        name: "[name].[ext]",
-                        outputPath: path.build,
-                        useRelativePath: true
+                        name: '[name].[ext]',
+                        outputPath: 'Assets/images/',
+                        useRelativePath: false
                     }  
                   }
                 ]
