@@ -3,21 +3,19 @@ import { Link } from 'react-router-dom';
 
 import './catalog.component.scss';
 
-const Catalog = ({ items }) => {
+const Catalog = ({ items, isChild }) => {
     return (
         <article className='catalog'>
             {items.map((item, i) => (
-                        <Link key={i} to={`/catalog/${item}`} className='catalog__item'>
+                        <Link key={i} to={`/catalog/${item.name}${isChild ? '/1' : ''}`} className='catalog__item'>
                             <img
                                 className='item__img'
-                                src={require(`../../Assets/images/catalog/${item}.jpg`)} />
+                                src={require(`../../Assets/images/catalog/${item.name}.jpg`)} />
                             <div className='item__layout'>
                                 <header className='item__layout__header'>
-                                    Lorem Ipsum
+                                    {item.header}
                                 </header>
-                                <p className='item__layout__content'>Et incididunt ullamco fugiat
-                                incididunt laborum adipisicing mollit sunt occaecat
-                                laboris eu eu laborum anim.</p>
+                                <p className='item__layout__content'>{item.text}</p>
                             </div>
                         </Link>
                     ))

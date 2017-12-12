@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 import Catalog from 'Components/Catalog';
 import fire from ':/fireScript';
@@ -6,15 +7,11 @@ import fire from ':/fireScript';
 import './home.view.scss';
 
 const items = [
-    'valentine',
-    'new-year',
-    'birthday',
-    'games',
-    'panda',
-    'nature',
-    'abstract',
-    'girls',
-    'movies'
+    {name: 'valentine', header: 'Ми-ми-ми', text: 'Не выпускай милоту из рук'},
+    {name: 'new-year', header: 'NewYear', text: 'Поделись новогодним настроением'},
+    {name: 'birthday', header: 'Туса-джуса', text: 'Выделяйся на тусовках'},
+    {name: 'games', header: 'Игры', text: 'Для истинных киберспортсменов'},
+    {name: 'panda', header: 'Стильно, модно, молодежно', text: 'То самое чувство когда ты круче всех! '}
 ];
 
 export default class Home extends Component {
@@ -58,7 +55,8 @@ export default class Home extends Component {
             <main className='home-content'>
                 <section className='content__block transparent first'>
                     <section className='block__content'>
-                        Anim voluptate reprehenderit ea duis amet.
+                        #CoverUp <br/>
+                        Зачехлись по полной!
                     </section>
                     <span className='big-arrow'>↓</span>
                 </section>
@@ -73,7 +71,7 @@ export default class Home extends Component {
                 <section className='content__block transparent first'>
                     <section className='block__content middle'>
                         Удобный и многофункциональный конструктор для создания неповторимого чехла.
-                        <button className='btn btn-green'>Перейти к конструктору</button>
+                        <NavLink to='/constructor' className='btn btn-green' >Перейти к конструктору</NavLink>
                     </section>
                 </section>
                 <section className='content__block  model'>
@@ -90,7 +88,7 @@ export default class Home extends Component {
                 <section className='content__block transparent first'>
                     <section className='block__content middle'>
                         В каталоге можно найти множество дизайнов на любой вкус.
-                        <button className='btn btn-lavanda'>Перейти в каталог</button>
+                       <NavLink to='/catalog-all' className='btn btn-lavanda' >Перейти в каталог</NavLink>
                     </section>
                 </section>
                 <section className='content__block  final'>
