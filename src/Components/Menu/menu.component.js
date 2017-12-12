@@ -17,6 +17,7 @@ const Menu = () => (
     <article className='header__nav-panel'>
       <NavLink to='/' className='link' activeClassName='current-link' exact>Главная</NavLink>
       <NavLink to='/catalog' className='link' activeClassName='current-link'>Каталог</NavLink>
+      <NavLink to='/constructor' className='link' activeClassName='current-link'>Конструктор</NavLink>
       <NavLink to='/about-us' className='link' activeClassName='current-link'>О нас</NavLink>
     </article>
   </header>

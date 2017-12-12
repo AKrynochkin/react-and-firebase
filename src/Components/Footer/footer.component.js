@@ -14,9 +14,9 @@ const Footer = () => (
     <div className='footer__main'>
       <span>+7 917 214 58 50</span>
       <div className='footer__social'>
-        <a href="//vk.com/satteloiv" className='icon icon-vk' aria-hidden='true'><img className="icon" src={require('../../Assets/images/icons/vk.svg')}/></a>
-        <a href="//vk.com/satteloiv" className='icon icon-instagram'><img className="icon" src={require('../../Assets/images/icons/instagram.svg')}/></a>
-        <a href="//vk.com/satteloiv" className='icon icon-twitter'><img className="icon" src={require('../../Assets/images/icons/twitter.svg')}/></a>
+        <a href="//vk.com/satteloiv" target='_blank' className='icon icon-vk' aria-hidden='true'><img className="icon" src={require('../../Assets/images/icons/vk.svg')}/></a>
+        <a href="//vk.com/satteloiv" target='_blank' className='icon icon-instagram'><img className="icon" src={require('../../Assets/images/icons/instagram.svg')}/></a>
+        <a href="//vk.com/satteloiv" target='_blank' className='icon icon-twitter'><img className="icon" src={require('../../Assets/images/icons/twitter.svg')}/></a>
       </div>
     </div>
     <div className='footer__copyright'><span>© CoverUp, 2017</span></div>

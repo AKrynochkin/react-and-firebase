@@ -19,10 +19,10 @@ const items = [
 ];
 
 const items2 = [
-    {name: 'bear', header: '', text: ''},
-    {name: 'new-year', header: '', text: ''},
-    {name: 'olen', header: '', text: ''},
-    {name: 'olen2', header: '', text: ''}
+    {name: 'bear', header: 'Новогодняя панда', text: 'Делай добро, увеличь популяцию панд'},
+    {name: 'new-year', header: 'Елочка', text: 'Елка не нуждается в представлении'},
+    {name: 'olen', header: 'Олень с усами', text: 'Для стильных аристократов. просто и лаконично'},
+    {name: 'olen2', header: 'Праздничный олень', text: 'Зимний праздничный олень дарит радость целый день'}
 ];
 
 export default class CatalogPage extends Component {

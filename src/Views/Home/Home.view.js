@@ -62,7 +62,7 @@ export default class Home extends Component {
                 </section>
                 <section className='content__block'>
                     <header className='block__header'>
-                        Anim voluptate duis:
+                        ТОП 5 категорий:
                     </header>
                     <section className='block__content'>
                         <Catalog items={items} />
@@ -88,7 +88,7 @@ export default class Home extends Component {
                 <section className='content__block transparent first'>
                     <section className='block__content middle'>
                         В каталоге можно найти множество дизайнов на любой вкус.
-                       <NavLink to='/catalog-all' className='btn btn-lavanda' >Перейти в каталог</NavLink>
+                       <NavLink to='/catalog' className='btn btn-lavanda' >Перейти в каталог</NavLink>
                     </section>
                 </section>
                 <section className='content__block  final'>

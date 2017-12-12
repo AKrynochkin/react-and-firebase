@@ -20,9 +20,11 @@ export default class AboutUs extends Component {
                         </div>
                         <div className='info-block__right'>
                             <h3 className='info-block__title'>CoverUp</h3>
-                            <p className='info-block__text'>Qui laborum exercitation laboris Lorem duis. In exercitation eiusmod est ea eiusmod cupidatat culpa in nisi nisi exercitation incididunt magna. Id velit enim voluptate nisi.</p>
-                            <p className='info-block__text'>Commodo ipsum minim nostrud aliqua exercitation aliquip commodo. Ut amet elit sit Lorem eiusmod in. Magna dolor magna ea reprehenderit. Ea ex sint pariatur consectetur proident nostrud. Exercitation dolor fugiat qui ipsum aliqua aliquip deserunt deserunt.</p>
-                            <p className='info-block__text'>Magna incididunt id in dolor anim do. Aliquip laborum laborum culpa nostrud nulla commodo labore reprehenderit nisi excepteur amet. Fugiat sit eu irure fugiat velit velit dolore fugiat laboris occaecat est cupidatat nostrud officia. Do incididunt sint dolore laborum occaecat nulla aliquip non. Anim incididunt ad consequat cillum minim minim sit eu.</p>
+                            <p className='info-block__text'>Бескрайний космос, наша планета, человек — все это появилось после одного неординарного события, которое ученые называют «большим взрывом». </p>
+                            <p className='info-block__text'>Большой взрыв — это творческий импульс, из которого родилось «всё». </p>
+                            <p className='info-block__text'>Так же было и с нашими чехлами. они появились из ничего в результате большого взрыва мозга их создателей. </p>
+                            <p className='info-block__text'>Мы хотим вдохновлять. Пусть наши олени, панды, елки и многое другое помогают придумывать что-то новое и воплощать самые смелые замыслы! </p>
+                            <p className='info-block__text'>Создай свою вселенную вместе с нами!</p>
                         </div>
                     </div>
                     <div className='main-section__item info-block'>
@@ -31,7 +33,7 @@ export default class AboutUs extends Component {
                     </div>
                     <div className='info-block__right'>
                         <h3 className='info-block__title'>CoverUp уже в товем городе!</h3>
-                        <p className='info-block__text'>Qui laborum exercitation laboris Lorem duis. In exercitation eiusmod est ea eiusmod cupidatat culpa in nisi nisi exercitation incididunt magna. Id velit enim voluptate nisi.</p>
+                        <p className='info-block__text'>Доставка: Стоимость доставки по Саратову и Энгельсу - 200 руб.</p>
                         <div className='store-info'>
                             <h3 className='store-info__title'>Саратов</h3>
                             <div><span className='store-info__field'>Адрес:</span>
