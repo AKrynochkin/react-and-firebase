@@ -3,10 +3,12 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackDevServer = require('webpack-dev-server');
 const path = require('./path');
 
 const cssFilename = 'static/css/[name].[contenthash:8].css';
 const jsFilename = 'static/js/main.[hash].js';
+const PORT = 3000;
 
 module.exports = {
     entry: [
@@ -51,7 +53,7 @@ module.exports = {
                                 {
                                     loader: require.resolve('css-loader'),
                                     options: {
-                                        importLoaders: 1,
+                                        importLoaders: 3,
                                         sourceMap: true
                                     },
                                 },
@@ -112,6 +114,9 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
-        open: true
+        hot: true,
+        port: PORT,
+        open: true,
+        historyApiFallback: true
     }
 };

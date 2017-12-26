@@ -10,7 +10,7 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "webpack-dev-server --config config/webpack.config.dev",
     "build": "webpack --config config/webpack.config.prod",
     "deploy": "firebase deploy",
     "bd": "npm run build && npm run deploy"
@@ -19,6 +19,8 @@
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^6.2.10",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",

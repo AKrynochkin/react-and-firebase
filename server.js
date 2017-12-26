@@ -1,8 +1,10 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./config/webpack.config.dev');
+var open = require('open');
 
 const PORT = 3000;
+const entry = `http://localhost:${PORT}/`;
 
 new WebpackDevServer(webpack(config), {
     historyApiFallback: true,
@@ -15,4 +17,5 @@ new WebpackDevServer(webpack(config), {
   }
 
   console.log(`Listening at localhost:${PORT}`);
+  open(entry);
 });

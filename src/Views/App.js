@@ -4,7 +4,7 @@ import AppRoutes from ':/routes';
 import Menu from 'Components/Menu';
 import Footer from 'Components/Footer';
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
   }
@@ -28,5 +28,3 @@ class App extends Component {
     ];
   }
 }
-
-export default App;

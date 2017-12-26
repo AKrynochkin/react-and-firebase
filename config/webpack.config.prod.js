@@ -34,15 +34,15 @@ module.exports = {
                             fallback: {
                                 loader: require.resolve('style-loader'),
                                 options: {
-                                    hmr: false
+                                    hmr: false,
+                                    sourceMap: true
                                 },
                             },
                             use: [
                                 {
                                     loader: require.resolve('css-loader'),
                                     options: {
-                                        url: false,
-                                        importLoaders: 1,
+                                        importLoaders: 3,
                                         minimize: true,
                                         sourceMap: true
                                     },

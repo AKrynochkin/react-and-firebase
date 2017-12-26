@@ -9,11 +9,11 @@ import PDP from './views/PDP';
 import Cart from './views/Cart';
 
 export default () => [
-  <Route exact path='/' component={Home}/>,
-  <Route path='/about-us' component={AboutUs} />,
-  <Route exact path='/constructor' component={Constructor} />,
-  <Route exact path='/catalog' component={CatalogPage} />,
-  <Route exact path='/catalog/:type' component={CatalogPage} />,
-  <Route path='/catalog/:type/:id' component={PDP} />,
-  <Route path='/cart' component={Cart} />
+  <Route key="homeRoute" exact path='/' component={Home}/>,
+  <Route key="aboutRoute" path='/about-us' component={AboutUs} />,
+  <Route key="constRoute" exact path='/constructor' component={Constructor} />,
+  <Route key="catalogRoute" exact path='/catalog' component={CatalogPage} />,
+  <Route key="catTyprRoute" exact path='/catalog/:type' component={CatalogPage} />,
+  <Route key="catItemRoute" path='/catalog/:type/:id' component={PDP} />,
+  <Route key="cartRoute" path='/cart' component={Cart} />
 ];

@@ -40,13 +40,13 @@
         color:white;
         display: block;
         border: 2px solid white;
-        margin: 0 auto;
         padding: 15px;
         margin-top: 20px;
         text-decoration: none;
         font-weight: normal;
         width: 320px;
         text-align: center;
+        user-select: none;
         cursor: pointer;
 
         &.btn-green {
@@ -62,6 +62,11 @@
                 background-color: #cbaaff;
             }
         }
+    }
+
+    .input.hidden[disabled] + label.btn {
+        cursor: not-allowed;
+        background: #474747;
     }
 
     .hidden {
