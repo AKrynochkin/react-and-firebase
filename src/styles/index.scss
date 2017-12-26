@@ -87,3 +87,47 @@ button, a {
   background: #fff;
   flex: 1 0 auto;
 }
+
+.btn {
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  color:white;
+  display: block;
+  border: 2px solid white;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: normal;
+  width: 320px;
+
+  &.btn-green {
+      background-color: #279e66;
+      &:hover {
+          background-color: #91e0ba;
+      }
+  }
+
+  &.btn-lavanda {
+      background-color: #5e4cb8;
+      &:hover {
+          background-color: #cbaaff;
+      }
+  }
+
+  &.btn-danger {
+      background-color: #ad3333;
+      &:hover {
+          background-color: #9e5a5a;
+      }
+  }
+
+  &[disabled] {
+    background: gray;
+    cursor: not-allowed;
+    &:hover {
+      background: gray;
+    }
+  }
+}

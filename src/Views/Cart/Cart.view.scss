@@ -26,4 +26,98 @@
         flex: 1 0 auto;
     }
 
+    .item-result {
+        display: flex;
+        border-top: 5px solid #b2abd4;
+        height: 250px;
+    }
+    
+    .delivery {
+        border-bottom: 5px solid #b2abd4;
+        display: flex;
+        justify-content: space-between;
+
+        .controls {
+            display: flex;
+            width: 120px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delivery-price {
+            padding: 20px 0;
+        }
+
+        .row {
+            flex: 1 1 auto;
+            display: flex;
+            padding-left: 60px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .name {
+                margin-right: 10px;
+            }
+
+            .input {
+                border-radius: 3px;
+                border: 1px solid;
+                padding: 5px;
+                width: 300px;
+            }
+        }
+
+        .btn {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+            line-height: 25px;
+        }
+
+        .btn-danger {
+            margin-right: 10px;
+        }
+    }
+
+    .item-img {
+        max-height: 100%;
+        width: 120px;
+    }
+
+    .item-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 200px 0 60px;
+    }
+
+    .item-name {
+        font-weight: bold;
+        margin-bottom: 45px;
+    }
+    
+    .left-part {
+        font-weight: bold;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .item-price, .delivery-price, .right-part {
+        background: #b2abd4;
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    .pay-result {
+        display: flex;
+        justify-content: space-between;
+    }
 }
